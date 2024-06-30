@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLC Flix - Regarder Fiasco</title>
+      <link rel="stylesheet" href="season.css">
+      <link rel="stylesheet" href="menu.css">
+      <link rel="stylesheet" href="media.css">
+      <link rel="stylesheet" href="search.css">
+      <link rel="icon" href="img/FLC-Flix_4-logo_v2_logo.png">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="https://flcorp.github.io/flcflix/">Accueil</a></li>
+            <li><a href="https://flcorp.github.io/flcflix/films.html">Films</a></li>
+            <li><a href="https://flcorp.github.io/flcflix/series.html">SEries</a></li>
+            <li><a href="https://flcorp.github.io/flcflix/documentaire.html">DocumEntaires</a></li>
+            <li><a href="https://flcorp.github.io/flcflix/settings.html">ParamEtres</a></li>
+            <li><a href="https://flcorp.github.io/flchill/" target="_blank">FLChill</a></li>
+            <li><a href="https://flcorp.github.io/FOB-Web-Site/" target="_blank">FOB Web Site</a></li>
+            <li><a href="https://flcorp.github.io/FOB-Web-Site/" target="_blank">Structures Sphere</a></li>
+            <li><a href="https://flcorp.github.io/nora-group/" target="_blank">Groupe Nora</a></li>
+            <li class="flc-flix-logo"><a href="#top"><img src="img/FLC_Flix_logo.png" width="100"></a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="fake-header">
+        <nav>
+          <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Films</a></li>
+            <li><a href="">SEries</a></li>
+            <li><a href="">DocumEntaires</a></li>
+            <li><a href="">ParamEtres</a></li>
+            <li><a href="" target="_blank">FLChill</a></li>
+            <li><a href="" target="_blank">FOB Web Site</a></li>
+            <li><a href="" target="_blank">Structures Sphere</a></li>
+            <li><a href="https://sites.google.com/view/flcorporation/accueil" target="_blank">FLCorporation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main>
+        <section id="hero-section">
+            <div class="logo-container">
+              <h1><strong class="title-strong">Fiasco</strong></h1>
+            </div>
+        </section>
+
+        <section id="about-section">
+          <div>
+            <div class="media-container">
+                <iframe id="media-player" width="720" height="370" src="https://uqload.to/embed-1vzeyg71a9jw.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="button-container">
+              <img src="img/Saison1.png" id="seasonsLogo"><br>
+              <div class="season1" id="seasonsDiv">
+                <button onclick="changeMedia('1vzeyg71a9jw.html')" class="media-btn" id="s1e1">Episode 1</button>
+                <button onclick="changeMedia('xjsxkafrqeln.html')" class="media-btn" id="s1e2">Episode 2</button>
+                <button onclick="changeMedia('lllyinh9tjrb.html')" class="media-btn" id="s1e3">Episode 3</button>
+                <button onclick="changeMedia('ly5itmeriely.html')" class="media-btn" id="s1e4">Episode 4</button>
+                <button onclick="changeMedia('c6y5m27bdimo.html')" class="media-btn" id="s1e5">Episode 5</button>
+                <button onclick="changeMedia('04cllxg0n0wx.html')" class="media-btn" id="s1e6">Episode 6</button>
+                <button onclick="changeMedia('jz314ecbgtfy.html')" class="media-btn" id="s1e7">Episode 7</button>
+                <br><br>
+                <div>
+                  <img src="img/Synopsis.png" alt="">
+                  <p class="synopsis-txt">
+                    Raphaël Valande entame le tournage de son premier long-métrage : une aventure traversant les époques depuis la préhistoire jusqu’au débarquement en passant par les vikings… pour rendre hommage à la vie héroïque de sa grand-mère résistante. Mais rapidement, les problèmes s’accumulent et le tournage tourne peu à peu au cauchemar. Et pour cause: quelqu’un de l’équipe tente de saborder son film de l’intérieur...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services-section" class="services-section">
+          <a href="#top" class="btn">Retourner en Haut de la Page</a>
+          <a href="https://flcorp.github.io/flcflix/series.html" class="btn">Regarder une autre Série</a>
+        </section>
+
+        <section id="services-section" class="services-section">
+          <img src="img/search_bar.png" class="logo">
+          <h1 id="search-advertissement">
+            ⚠ Veuillez à mettre des Majuscules au début de vos recherches et à chaques mot, sauf pour les
+            "un" "de" "les"... si ce n'est pas le premier mot de votre recherche
+          </h1>
+          <div class="input__container" id="search-bar-container">
+            <div class="shadow__input"></div>
+            <button class="input__button__shadow">
+              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+                <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+              </svg>
+            </button>
+            <input type="text" name="text" class="input__search" id="search-input" placeholder="Que souhaites-tu rechercher?">
+          </div>
+          <ul id="result-list">
+            <!-- Cette liste sera remplie avec les résultats de la recherche -->
+          </ul>
+        </section>
+      </main>
+
+      <div class="important-message">
+        <h1 id="episodesTitle" class="important-msg-txt">Saison 1 - Episode 1</h1>
+      </div>
+
+      <footer>
+        <p>Groupe Nora | FloLeCrafteur</p>
+      </footer>
+
+      <script src="menu.js"></script>
+      <script src="search.js"></script>
+      <script src="media.js"></script>
+      <script src="seasons.js"></script>
+      <script src="episodes-seasons/season1.js"></script>
+  </body>
+</html>

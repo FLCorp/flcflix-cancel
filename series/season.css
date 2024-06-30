@@ -1,0 +1,777 @@
+@font-face {
+    font-family: flc-flix_v3;
+    src: url(font/FoundationLogo.ttf);
+}
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    font-family: flc-flix_v3;
+}
+
+.title{
+    font-family: netflix;
+    color: #fff;
+}
+
+/* Styles généraux */
+body {
+    font-family: netflix;
+    background-color: #000231;
+    color: #333;
+    line-height: 1.6;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+/* En-tête */
+header {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    border-bottom-right-radius: 10px;
+    z-index: 1000;
+}
+
+.header-patch {
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    border-bottom-left-radius: 10px;
+    right: 0px;
+}
+
+.fake-header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: netflix;
+    transition: 0.5s ease;
+}
+nav ul li a:hover {
+    color: #00a733;
+    font-size: 16px;
+    font-family: netflix;
+}
+
+.flc-flix-logo {
+    float: right;
+}
+  
+/* Section d'accueil (hero section) */
+#hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #1e1e1e, #0003be, #000231);
+}
+  
+#hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #555;
+}
+  
+/* Sections */
+section {
+    padding: 80px 0;
+}
+  
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+/* Formulaire de contact */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+form button {
+    display: block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+form button:hover {
+    background-color: #555;
+}
+  
+/* Pied de page */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about-section{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#services-section{
+    text-align: center;
+}
+
+.discover{
+    color: white;
+    font-family: flc-flix_v3;
+}
+
+button{
+    width: 30%;
+    height: 50px;
+    border-radius: 0%;
+    border-color: black;
+    background-color: #7a7a7a;
+    color: white;
+    font-family: netflix;
+    font-size: 1em;
+}
+
+strong{
+    font-family: flc-flix_v3;
+    color: #fff;
+    font-size: 2em;
+}
+
+.infos{
+    color: white;
+    font-family: flc-flix_v3;
+}
+
+.logo-container2 {
+    display: flex;
+    align-items: center;
+}
+  
+.logo2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.old-version{
+    width: 512px;
+}
+
+.center-img{
+    text-align: center;
+}
+
+.btn2 {
+    width: 80%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #1000be;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+    font-family: flc-flix_v3;
+    font-size: 1.5em;
+}
+  
+.btn2:hover {
+    border-color: #fff;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0003be;
+    font-family: flc-flix_v3;
+    font-size: 2em;
+}
+
+#flcorporation{
+    text-align: center;
+}
+
+.flcorporation{
+    color: #fff;
+    font-family: netflix;
+    background-clip: text;
+    background: linear-gradient(to right, #0013be, #060054);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.alpha-btn{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #004cbe;
+    text-decoration: none;
+    border: 3px solid #004cbe;
+    border-radius: 10px;
+    transition: border-radius 0.5s ease, background-color 0.5s ease, font-size 0.5s ease, text-decoration 0.5s ease, width 0.5s ease;
+    font-family: flc-flix_v3;
+    font-size: 1.5em;
+}
+
+.alpha-btn:hover{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #004cbe;
+    color: white;
+    text-decoration: underline;
+    border-radius: 20px;
+    font-size: 1.7em;
+}
+
+strong{
+    background: linear-gradient(to right, #00a733,#003d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+}
+
+.strong2{
+    background: linear-gradient(to left, #00a733,#003d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-strong{
+    background: linear-gradient(to right, #00a733,#003d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+}
+
+.group-head {
+    background-color: #00be62;
+    padding: 20px;
+}
+
+#group-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #00be62, #00be62, #08e3be, #08e3be, #8c0be8, #000231);
+}
+  
+#group-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#group-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.btn3 {
+    width: 40%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #be0000;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+    font-family: netflix;
+    font-size: 1.5em;
+}
+  
+.btn3:hover {
+    border-color: #fff;
+    color: #be0000;
+    background-color: #fff;
+    font-family: netflix;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background: linear-gradient(to bottom right, #0003be, #DB202C);
+    color: #fff;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Masquer par défaut */
+}
+
+.popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background: linear-gradient(to bottom right, #0003be, #DB202C);
+    color: #fff;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Masquer par défaut */
+}
+
+.popup button{
+    width: 100px;
+    height: 30px;
+    background-color: #00a733;
+    border: 2px solid #003d12;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: border-radius 0.7s ease;
+}
+
+.popup button:hover{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.popup2 button{
+    width: 100px;
+    height: 30px;
+    background-color: #00a733;
+    border: 2px solid #003d12;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: border-radius 0.7s ease;
+}
+
+.popup2 button:hover{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.popup .popup-button{
+    width: 200px;
+    height: 30px;
+    background-color: #0003be;
+    border: 2px solid #000231;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: border-radius 0.7s ease;
+}
+
+.popup .popup-button:hover{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.popup2 .popup-button2{
+    width: 200px;
+    height: 30px;
+    background-color: #0003be;
+    border: 2px solid #000231;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: border-radius 0.7s ease;
+}
+
+.popup2 .popup-button2:hover{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.popup-img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.7s ease;
+}
+
+.popup-img:hover{
+    opacity: 50%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+#showPopupButton{
+    cursor: pointer;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.show-popup-btn{
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#showThirdPopupButton{
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.show-popup-button-pc {
+    right: 0px;
+}
+
+#old-theme{
+    text-align: center;
+}
+  
+.chill-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+  
+.chill-btn:hover {
+    background: linear-gradient(to bottom, #17f05c, #1cd9f3);
+}
+
+.wait{
+    text-align: center;
+    font-family: netflix
+}
+
+.serie-a{
+  color: white;
+  margin-left: 10px;
+  font-family: flc-flix_v3;
+  font-size: 1.5em;
+  transition: color 0.7s ease, font-size 0.7s ease;
+}
+
+.serie-a:hover{
+  color: #db07cd;
+  margin-left: 10px;
+  font-family: flc-flix_v3;
+  font-size: 1.8em;
+}
+
+.other-series{
+    margin-left: 10px;
+}
+
+.iframeimg{
+    border-radius: 15px;
+}
+
+.advertissement0{
+    font-family: netflix;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.advertissement1{
+    font-family: netflix;
+    font-size: 1.5em;
+    background: linear-gradient(to right, rgb(254, 0, 0), #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.iframe-div{
+    text-align: center;
+}
+  
+.btnPopup {
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btnPopup:hover {
+    background-color: #555;
+}
+
+.important-message {
+    text-align: center;
+    position: fixed;
+    color: #fff;
+    font-family: FLC-Flix_v4;
+    background-color: #000125;
+    padding: 10px;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+.important-msg-txt{
+    font-size: 1em;
+}
+
+.episodes-title{
+    font-family: netflix;
+    display: none;
+}
+
+.season2, .season3, .season4, .season5, .season6, .season7, .season8, .season9, .season10, .season11, .season12{
+    display: none;
+}
+
+#seasonsDiv div{
+    background-color: #00011a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.synopsis-txt{
+    font-family: netflix;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+@media screen and (max-width : 768px){
+    img {
+        width: 250px;
+        height: auto;
+        border-radius: 5px;
+    }
+    .categorie-name{
+        width: 200px;
+        height: auto;
+    }
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+    .btn2 {
+        width: 80%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #1000be;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+        font-family: flc-flix_v3;
+        font-size: 0.8em;
+    }
+      
+    .btn2:hover {
+        border-color: #fff;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #0003be;
+        font-family: flc-flix_v3;
+        font-size: 1em;
+    }
+    .btn3 {
+        width: 60%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #be0000;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+        font-family: netflix;
+        font-size: 1em;
+    }
+      
+    .btn3:hover {
+        border-color: #fff;
+        color: #be0000;
+        background-color: #fff;
+        font-family: netflix;
+    }
+    .logo{
+        width: 300px;
+        height: auto;
+    }
+    .vostfr{
+        width: auto;
+        height: auto;
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 0.9em;
+        font-family: netflix;
+        transition: 0.5s ease;
+    }
+    nav ul li a:hover {
+        color: #0407bd;
+        font-size: 16px;
+        font-family: netflix;
+    }
+    .title-strong{
+        font-size: 1em;
+    }
+    strong{
+        font-size: 1.5em;
+    }
+    iframe{
+        width: auto;
+    }
+    .iframeimg{
+        width: 70px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .iframetxt{
+        font-size: 1.5em;
+    }
+    header {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .flc-flix-logo {
+        visibility: hidden;
+        display: none;
+    }
+    .important-message{
+        width: auto;
+    }
+    .header-patch{
+        text-align: center;
+        background-color: #1e1e1e;
+        padding: 20px;
+        position: fixed;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+        bottom: 0px;
+        right: 0px;
+        width: 150px;
+        height: 50px;
+        font-size: 1em;
+        visibility: hidden;
+    }
+
+    .episodes-title{
+        display: inherit;
+    }
+}
