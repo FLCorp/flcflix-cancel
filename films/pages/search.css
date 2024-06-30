@@ -1,0 +1,50 @@
+/* styles.css */
+#search-container {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+#search-input {
+    padding: 5px;
+    width: 90%;
+    font-family: netflix;
+    font-size: 1.5em;
+    background: linear-gradient(to right, #DB004d, #003add);
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 60px;
+    color: white;
+}
+
+#result-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: netflix;
+    color: #fff;
+}
+
+#result-list li {
+    margin: 5px;
+    color: #fff;
+}
+#result-list ul {
+    color: #fff;
+}
+
+#search-advertissement{
+    font-family: netflix;
+}
+
+@media screen and (max-width : 768px) {
+    #search-input {
+        font-size: 1em;
+        height: 50px;
+        background: linear-gradient(to right, #00a733,#003d12);
+    }
+    #search-advertissement {
+        font-size: 1em;
+    }
+}
