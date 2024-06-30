@@ -1,0 +1,549 @@
+@font-face {
+    font-family: FLC-Flix-v4;
+    src: url(font/FoundationLogo.ttf);
+}
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #808080;
+    font-family: FLC-Flix-v4;
+}
+
+.title{
+    font-family: netflix;
+    color: #fff;
+}
+
+/* Styles généraux */
+body {
+    font-family: netflix;
+    background-color: #000231;
+    color: #333;
+    line-height: 1.6;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+/* En-tête */
+header {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    border-bottom-right-radius: 10px;
+    z-index: 1000;
+}
+.fake-header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: netflix;
+    transition: 0.5s ease;
+}
+nav ul li a:hover {
+    color: #00a733;
+    font-size: 16px;
+    font-family: netflix;
+}
+
+.flc-flix-logo {
+    float: right;
+}
+  
+/* Section d'accueil (hero section) */
+#hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #1e1e1e, #0003be, #000231);
+}
+  
+#hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #555;
+}
+  
+/* Sections */
+section {
+    padding: 80px 0;
+}
+  
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #777;
+}
+  
+/* Formulaire de contact */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+form button {
+    display: block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+form button:hover {
+    background-color: #555;
+}
+  
+/* Pied de page */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about-section{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#services-section{
+    text-align: center;
+}
+
+.discover{
+    color: white;
+    font-family: FLC-Flix-v4;
+}
+
+button{
+    width: 30%;
+    height: 50px;
+    border-radius: 0%;
+    border-color: black;
+    background-color: #7a7a7a;
+    color: white;
+    font-family: netflix;
+    font-size: 1em;
+}
+
+strong{
+    font-family: FLC-Flix-v4;
+    color: #fff;
+}
+
+.infos{
+    color: white;
+    font-family: FLC-Flix-v4;
+}
+
+.logo-container2 {
+    display: flex;
+    align-items: center;
+}
+  
+.logo2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.old-version{
+    width: 512px;
+}
+
+.center-img{
+    text-align: center;
+}
+
+.btn2 {
+    width: 80%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #1000be;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+    font-family: FLC-Flix-v4;
+    font-size: 1.5em;
+}
+  
+.btn2:hover {
+    border-color: #fff;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0003be;
+    font-family: FLC-Flix-v4;
+    font-size: 2em;
+}
+
+#flcorporation{
+    text-align: center;
+}
+
+.flcorporation{
+    color: #fff;
+    font-family: netflix;
+    background-clip: text;
+    background: linear-gradient(to right, #0013be, #060054);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.alpha-btn{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #004cbe;
+    text-decoration: none;
+    border: 3px solid #004cbe;
+    border-radius: 10px;
+    transition: border-radius 0.5s ease, background-color 0.5s ease, font-size 0.5s ease, text-decoration 0.5s ease, width 0.5s ease;
+    font-family: FLC-Flix-v4;
+    font-size: 1.5em;
+}
+
+.alpha-btn:hover{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #004cbe;
+    color: white;
+    text-decoration: underline;
+    border-radius: 20px;
+    font-size: 1.7em;
+}
+
+strong{
+    background: linear-gradient(to right, #00a733,#003d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.strong2{
+    background: linear-gradient(to left, #00a733,#003d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.group-head {
+    background-color: #00be62;
+    padding: 20px;
+}
+
+#group-section {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #00be62, #00be62, #08e3be, #08e3be, #8c0be8, #000231);
+}
+  
+#group-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+#group-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.btn3 {
+    width: 40%;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #be0000;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+    font-family: netflix;
+    font-size: 1.5em;
+}
+  
+.btn3:hover {
+    border-color: #fff;
+    color: #be0000;
+    background-color: #fff;
+    font-family: netflix;
+}
+
+#old-theme{
+    text-align: center;
+}
+  
+.chill-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+  
+.chill-btn:hover {
+    background: linear-gradient(to bottom, #17f05c, #1cd9f3);
+}
+
+.wait{
+    text-align: center;
+    font-family: netflix
+}
+
+.img-serie{
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.serie-container{
+    font-family: netflix;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.serie-text{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.txt-series{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family: netflix;
+    font-size: 1em;
+}
+
+.serie-text:hover .txt-series{
+    opacity: 1;
+}
+
+@media screen and (max-width : 768px){
+    img {
+        width: 90px;
+        height: 130px;
+        border-radius: 5px;
+    }
+    h1{
+        font-size: large;
+    }
+    .seasons{
+        width: 200px;
+        height: auto;
+    }
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+    .btn2 {
+        width: 80%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #1000be;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: border-radius 0.5s ease, background-color 0.7s ease, font-size 0.7s ease;
+        font-family: FLC-Flix-v4;
+        font-size: 0.8em;
+    }
+    .btn2:hover {
+        border-color: #fff;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #0003be;
+        font-family: FLC-Flix-v4;
+        font-size: 1em;
+    }
+    .btn3 {
+        width: 60%;
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid #be0000;
+        border-radius: 10px;
+        transition: background-color 0.7s ease;
+        transition: background-color 0.7s ease, border-color 0.7s ease, color 0.7s ease;
+        font-family: netflix;
+        font-size: 1em;
+    }
+      
+    .btn3:hover {
+        border-color: #fff;
+        color: #be0000;
+        background-color: #fff;
+        font-family: netflix;
+    }
+    .logo{
+        width: auto;
+        height: auto;
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 0.9em;
+        font-family: netflix;
+        transition: 0.5s ease;
+    }
+    nav ul li a:hover {
+        color: #0407bd;
+        font-size: 16px;
+        font-family: netflix;
+    }
+    header {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .flc-flix-logo {
+        visibility: hidden;
+        display: none;
+    }
+    .img-serie{
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .serie-container{
+        font-family: netflix;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .serie-text{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .txt-series{
+        visibility: hidden;
+        display: none;
+    }
+    
+    .serie-text:hover .txt-series{
+        opacity: 0;
+    }
+}

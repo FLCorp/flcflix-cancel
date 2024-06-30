@@ -1,0 +1,121 @@
+/* Styles for the menu button */
+.menu-button {
+  padding: 10px 15px;
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  border: 2px solid;
+  cursor: pointer;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 300px;
+  transition: width 0.7s ease, border-radius 0.7s ease, background-color 0.7s ease, color 0.7s ease;
+  margin-left: 30px;
+}
+
+.menu-button:hover {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 20px;
+  width: 350px;
+}
+
+.menu-a{
+  color: white;
+  margin-left: 10px;
+  font-family: netflix;
+  font-size: 1.5em;
+  transition: color 0.7s ease;
+}
+
+.menu-a:hover{
+  color: #00a733;
+  margin-left: 10px;
+  font-family: netflix;
+}
+  
+/* Styles for the dropdown menu */
+.menu {
+  width: 95%;
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  z-index: 1;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.img-film{
+  border-radius: 20px;
+  margin-left: 32px;
+}
+
+.menu-title{
+  margin-left: 10px;
+}
+
+@media screen and (max-width : 768px) {
+  .menu-button {
+    padding: 10px 15px;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+    border: 2px solid;
+    cursor: pointer;
+    width: 250px;
+    transition: width 0.7s ease, border-radius 0.7s ease, color 0.7s ease, background-color 0.7s ease;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .menu-button:hover {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 2px solid #1e1e1e;
+    color: #1e1e1e;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 280px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .menu-a{
+    color: white;
+    margin-right: 10px;
+    font-family: netflix;
+    font-size: large;
+    transition: color 0.7s ease;
+  }
+  .menu-a:hover{
+    color: #00a733;
+    margin-right: 10px;
+    font-family: netflix;
+  }
+  .menu {
+    width: 87%;
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 1;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  .img-film{
+    border-radius: 20px;
+    margin-left: 32px;
+  }
+}

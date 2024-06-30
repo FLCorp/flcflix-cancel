@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLC Flix V4</title>
+      <link rel="stylesheet" href="custom.css">
+      <link rel="stylesheet" href="timer.css">
+      <link rel="stylesheet" href="menu.css">
+      <link rel="stylesheet" href="search.css">
+      <link rel="stylesheet" href="random.css">
+      <link rel="icon" href="img/FLC-Flix_4-logo_v2_logo.png">
+    </head>
+    <body>
+      <div class="popup" id="popup">
+        <!-- Contenu du popup -->
+        <h2>FLC Flix V4 est là et encore plus dynamique qu'avant!</h2>
+        <p>
+          Ça y est! FLC Flix V4 est enfin là, et arrive avec un style graphique revisité mais surtout plusieurs
+          nouveautés! Pour les découvrir, je t'invite à visiter ce site : <a href="https://sites.google.com/view/flcflixv4-news/accueil" target="_blank">MàJ FLC-Flix_4.0</a> <br>
+          Parmi ces quelques nouveautés, voici les plus importantes : <br>
+          L'arrivée d'une Barre de Recherche <br>
+          L'arrivée d'un système de comptes <br>
+          L'arrivée d'une nouvelle disposition pour les Séries et Films <br>
+          Je vous souhaite une bonne visite, et une bonne nouvelle expérience sur FLC Flix V4!
+        </p>
+        <a id="closeButton">
+          <button>
+            Fermer
+          </button>
+        </a>
+        <a id="showSecondPopupButton">
+          <button>
+          Regarder les anciens Patch Notes
+          </button>
+        </a>
+      </div>
+      <div class="popup2" id="popup2">
+        <!-- Contenu du popup -->
+        <h2>Anciens Patch Notes</h2>
+        <p>Quel ancien Patch Note voulez-vous lire?</p>
+        <a id=""><button class="popup-button2">Patch Note du XO / XO / 2024</button></a><br>
+        <button id="closeButton2">Fermer</button>
+      </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="documentaire.html">DocumEntaires</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+            <li><a href="https://flcorp.github.io/flchill/" class="flchill"  target="_blank">FLChill</a></li>
+            <li><a href="https://flcorp.github.io/FOB-Web-Site/" class="fob" target="_blank">FOB Web Site</a></li>
+            <li><a href="https://flcorp.github.io/Structures-Sphere/" class="structures" target="_blank">Structures Sphere</a></li>
+            <li><a href="https://flcorp.github.io/nora-group/" class="nora" target="_blank">Groupe Nora</a></li>
+            <li class="flc-flix-logo"><a href="#top"><img src="img/FLC_Flix_logo.png" width="100"></a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="header-patch">
+        <nav class="patchnote-box">
+          <ul>
+            <li><a id="showPopupButton" class="show-popup-button-pc">Ouvrir le Patch Note</a></li>
+            <li><a href="account.html" class="show-popup-button-pc">Mon Compte</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fake-header" id="top">
+        <nav>
+          <ul>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="documentaire.html">DocumEntaires</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+            <li><a href="https://flcorp.github.io/flchill/" target="_blank">FLChill</a></li>
+            <li><a href="https://flcorp.github.io/FOB-Web-Site/" target="_blank">FOB Web Site</a></li>
+            <li><a href="https://flcorp.github.io/Structures-Sphere/" target="_blank">Structures Sphere</a></li>
+            <li><a href="https://sites.google.com/view/flcorporation/accueil" target="_blank">Nora Corporation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main class="main1">
+        <section id="hero-section">
+            <div class="logo-container">
+              <img src="img/FLC-Flix_4-logo_v2.png" alt="Logo" class="logo">
+            </div>
+            <a href="account.html" class="btn-mobile">Mon Compte</a>
+            <a id="showPopupButtonMobile" class="btn-mobile">Lire le Patch Note</a>
+          <p>Un site développé par <strong>FloLeCrafteur</strong></p>
+          <p>Version <strong>4.0.0</strong></p>
+          <div class="input__container" id="search-bar-container">
+            <div class="shadow__input"></div>
+            <button class="input__button__shadow">
+              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+                <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+              </svg>
+            </button>
+            <input type="text" name="text" class="input__search" id="search-input" placeholder="Que souhaites-tu rechercher?">
+          </div>
+          <ul id="result-list">
+            <!-- Cette liste sera remplie avec les résultats de la recherche -->
+          </ul>
+        </section>
+      </main>
+
+      <main>
+        <section id="about-section">
+          <h1 class="news-box-title">Avertissement</h1>
+          <p>
+            Les médias de FLC Flix (Films, Séries et Documentaires) sont sous le lecteur vidéo Uqload. Donc, nous
+            n'avons aucun contrôle sur les médias et donc, des pubs sont disponibles sur le lecteur vidéo, rendant
+            l'expérience moins bonne. <br>
+            Donc, pour les utilisateurs PC, nous vous conseillons d'utiliser un bloqueur
+            de publicités, tel que AdBlock Plus, ou d'opter pour le navigateur Brave*. <br>
+            Pour les utilisateurs mobiles (tablettes, téléphones), nous vous conseillons d'installer Brave sur l'App Store (iOs)
+            ou sur le Play Store (Android). <br>
+            Nous vous remercions de prêter attention à ce détail
+          </p>
+        </section>
+        <br>
+        <section id="about-section">
+          <h1 class="news-box-title">Nouveau(x) Film(s)</h1>
+          <a href="films.html">Voir tous les Films</a>
+          <br>
+          <a href="films/pages/furiosa.html"><img src="films/posters/furiosa.jpg" class="monthly_media-first" width="170" height="250"></a>
+          <a href="films/comedie.html#dali"><img src="films/posters/daaaaaali.jpg" class="monthly_media" width="170" height="250"></a>
+          <a href="films/comedie.html#blueCompagnie"><img src="films/posters/blue_companie.jpg" class="monthly_media-last" width="170" height="250"></a>
+        </section>
+        <br>
+        <section id="about-section">
+          <h1 class="news-box-title">Nouvelle(s) Série(s)</h1>
+          <a href="series.html">Voir toutes les Séries</a>
+          <br>
+          <a href="series/karlagerfeld.html"><img src="img/posters/becoming_karl_lagerfeld.jpg" class="monthly_media-first" width="170" height="250"></a>
+        </section>
+        <br>
+        <section id="about-section">
+          <h1 class="news-box-title">Nouveau(x) Documentaire(s)</h1>
+          <a href="documentaire.html">Voir toute la catégorie</a>
+          <br>
+          <a href=""><img src="img/posters/apollo.png" class="monthly_media-first" width="170" height="250"></a>
+          <a href=""><img src="img/posters/cybermonde.jpg" class="monthly_media" width="170" height="250"></a>
+          <a href=""><img src="img/posters/elvis_poster.jpg" class="monthly_media-last" width="170" height="250"></a>
+        </section>
+
+          <section id="random-section" class="random-body">
+            <h2 class="random-title">Auto-Film</h2>
+            <h1 class="random-title2">Tu ne sais pas quoi regarder?</h1>
+            <button id="myButton" class="random-button">
+              <span> Alors Clique ici! </span>
+            </button>
+            <p id="result"></p>
+          </section>
+
+          <section id="date-section">
+            <div class="parent">
+                <div class="card">
+                    <div class="content-box">
+                        <span class="card-title" id="week"></span><br>
+                        <span class="card-title" id="heure"></span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month" id="month"></span>
+                        <span class="date" id="day"></span>
+                    </div>
+                </div>
+            </div>
+          </section>
+  
+          <section id="flcorporation">
+            <h2 class="flcorporation">Se rendre sur le Site du Groupe Nora</h2>
+            <a href="https://flcorp.github.io/nora-group/" target="_blank">
+              <button class="btn2">
+                Groupe Nora
+              </button>
+            </a>
+          </section>
+        </main>
+  
+        <div class="timer-img">
+          <img src="img/patch_note/flc-flix_4-1_logo.png" class="next-version-logo">
+        </div>
+
+        <div class="timer">
+          <span id="days">00</span> jours
+          <span id="hours">00</span> heures
+          <span id="minutes">00</span> minutes
+          <span id="seconds">00</span> secondes
+        </div>
+
+      <footer>
+        <p>Groupe Nora | FloLeCrafteur <br>
+          Héberger sous le service de Github</p>
+      </footer>
+
+      <script src="timer.js"></script>
+      <script src="popup.js"></script>
+      <script src="menu.js"></script>
+      <script src="search.js"></script>
+      <script src="random.js"></script>
+      <script src="logo.js"></script>
+      <script src="heure1.js"></script>
+      <script src="heure2.js"></script>
+      <script src="heure3.js"></script>
+  </body>
+</html>

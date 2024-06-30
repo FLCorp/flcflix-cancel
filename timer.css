@@ -1,0 +1,35 @@
+.timer {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: netflix;
+  color: #00a733;
+  background-color: #000231;
+}
+  
+.timer span {
+  margin: 0 5px;
+}
+
+.timer-txt {
+  color: #064eac;
+  font-family: FLC-Flix-v4;
+  text-align: center;
+}
+
+.timer-img{
+  text-align: center;
+  background-color: #000231;
+}
+
+@media screen and (max-width : 768px){
+  .timer {
+    font-size: 16px;
+  }
+  .next-version-logo{
+    width: 250px;
+    height: auto;
+  }
+}

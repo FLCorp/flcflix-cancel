@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLC Flix - Espace Comptes</title>
+      <link rel="stylesheet" href="custom.css">
+      <link rel="stylesheet" href="timer.css">
+      <link rel="stylesheet" href="menu.css">
+      <link rel="icon" href="img/FLC-Flix_4-logo_v2_logo.png">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="https://flcorp.github.io/flcflix/">Accueil</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="documentaire.html">DocumEntaires</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+            <li><a href="https://flcorp.github.io/flchill/" class="flchill" target="_blank">FLChill</a></li>
+            <li><a href="https://flcorp.github.io/FOB-Web-Site/" class="fob" target="_blank">FOB Web Site</a></li>
+            <li><a href="https://flcorp.github.io/Structures-Sphere/" class="structures" target="_blank">Structures Sphere</a></li>
+            <li><a href="https://flcorp.github.io/nora-group/" class="nora" target="_blank">Groupe Nora</a></li>
+            <li class="flc-flix-logo"><a href="#top"><img src="img/FLC_Flix_logo.png" width="100"></a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="fake-header" id="top">
+        <nav>
+          <ul>
+            <li><a href="https://flcorp.github.io/flcflix/">Accueil</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="series.html">SEries</a></li>
+            <li><a href="documentaire.html">DocumEntaires</a></li>
+            <li><a href="settings.html">ParamEtres</a></li>
+            <li><a href="https://flcorp.github.io/flchill/" target="_blank">FLChill</a></li>
+            <li><a href="https://flcorp.github.io/nora-group/" target="_blank">FLCorporation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main class="main1">
+        <section id="hero-section">
+            <div class="logo-container">
+              <img src="img/FLC-Flix_4-logo_v2.png" alt="Logo" class="logo">
+            </div>
+        </section>
+      </main>
+
+      <main class="code-zone">
+        <div id="container">
+            <h2>Se Connecter</h2>
+            <p>Identifiant:</p>
+            <input type="text" id="accessNameInput" placeholder="Identifiant">
+            <p>Mot de Passe::</p>
+            <input type="password" id="accessCodeInput" placeholder="Mot de Passe"><br>
+            <button onclick="checkAccessCode()" id="accessBtn">Valider</button>
+            <p id="errorMessage"></p>
+        </div>
+        <div id="container">
+            <h2>S'inscrire</h2>
+            <p>Pour s'inscrire, je t'invites à nous contacter sur le serveur Discord suivant:</p>
+            <a href="https://discord.gg/ezY4mq89Qd">Lien vers le Discord de FLC Flix</a>
+            <p>Note: De nouveaux moyens pour créer un compte sont en développement, et arriveront au fûr et à mesure de FLC Flix V4</p>
+        </div>
+      </main>
+
+      <main class="code-zone-mobile">
+        <div id="container-mobile">
+            <h2>Se Connecter</h2>
+            <p>Identifiant:</p>
+            <input type="text" id="accessNameInputMobile" placeholder="Identifiant">
+            <p>Mot de Passe::</p>
+            <input type="password" id="accessCodeInputMobile" placeholder="Mot de Passe"><br>
+            <button onclick="checkAccessCode()" id="accessBtn">Valider</button>
+            <p id="errorMessageMobile"></p>
+        </div>
+        <div id="container-mobile">
+            <h2>S'inscrire</h2>
+            <p>Pour s'inscrire, je t'invites à nous contacter sur le serveur Discord suivant:</p>
+            <a href="https://discord.gg/ezY4mq89Qd">Lien vers le Discord de FLC Flix</a>
+        </div>
+      </main>
+
+      <main>
+        <div id="container2">
+            <h2>En cas de problèmes</h2>
+            <p>
+              Si vous possédez un problème comme par exemple un oublie de Mot de Passe ou d'Identifiant, n'hésitez pas à ouvrir un ticket dans le salon #📩ticket du <a href="https://discord.gg/ezY4mq89Qd">Serveur Discord de FLC Flix</a><br>
+              Si vous désirez changer votre Mot de Passe ou votre Identifiant, vous devez aussi ouvrir un ticket. Un membre du STAFF ou moi même s'en occupera.
+            </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>Groupe Nora | FloLeCrafteur</p>
+      </footer>
+
+      <script src="timer.js"></script>
+      <script src="popup.js"></script>
+      <script src="menu.js"></script>
+      <script src="directing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+/*Neo Brutalism pricing card*/
+.card {
+    width: 190px;
+    background: #00ffa0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    font-family: Arial;
+  }
+  
+  /*Card content*/
+  .pricing-block-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pricing-plan {
+    color: #05060f;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  
+  .price-value {
+    display: flex;
+    color: #05060f;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  
+  .pricing-note {
+    opacity: 0.8;
+  }
+  
+  /*Checklist*/
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .check-list-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
